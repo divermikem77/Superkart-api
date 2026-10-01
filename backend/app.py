@@ -67,6 +67,6 @@ def predict_sales():
         print("Error during prediction:", str(e))
         return jsonify({'error': f"Prediction failed: {str(e)}"}), 500
 
-# Run the app (for local testing only)
+# Run the app (for local testing)
 if __name__ == '__main__':
     superkart_api.run(debug=True)
