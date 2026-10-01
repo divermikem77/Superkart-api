@@ -10,6 +10,6 @@ COPY . .
 # Install Python dependencies listed in requirements.txt
 RUN pip3 install -r requirements.txt
 
-# zzz This below from Cotainerization Solution Backend Frontend had 8501 below, I changed it to 7860
+# zzz This below from Containerization Solution Backend Frontend had 8501 below, not sure why, I changed it to 7860
 # Define the command to run the Streamlit app on port 7860 and make it accessible externally
 CMD ["streamlit", "run", "app.py", "--server.port=7860", "--server.address=0.0.0.0", "--server.enableXsrfProtection=false"]
